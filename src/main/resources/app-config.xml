@@ -4,9 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="loggerFactory" class="pl.sda.beans.LoggerFactoryImpl"/>
+    <bean id="loggerFactory" class="pl.sda.project.data.beans.LoggerFactoryImpl"/>
 
-    <bean id="loggerPrinter" class="pl.sda.beans.LoggerPrinter">
+    <bean id="loggerPrinterddd" class="pl.sda.project.data.beans.LoggerPrinter">
         <constructor-arg name="factory" ref="loggerFactory"/>
     </bean>
 

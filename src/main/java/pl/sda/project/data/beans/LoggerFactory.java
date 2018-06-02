@@ -1,4 +1,4 @@
-package pl.sda.beans;
+package pl.sda.project.data.beans;
 
 public interface LoggerFactory {
 
