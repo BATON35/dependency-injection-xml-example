@@ -10,7 +10,7 @@ public class AppLauncher {
         Coach theCoach = context.getBean("myCoach", Coach.class);
         Coach greedyCoach = context.getBean("greedyCoach", Coach.class);
 
-        System.out.println(theCoach.getDailyworkout() + " " + greedyCoach.getDailyworkout());
+        System.out.println(theCoach.getDailyWorkout() + " " + greedyCoach.getDailyWorkout());
 
         context.close();
 
