@@ -15,4 +15,12 @@ public class LoggerPrinter {
         String log = factory.getLog(message);
         System.out.println(log);
     }
+
+    public LoggerFactory getFactory() {
+        return factory;
+    }
+
+    public void setFactory(LoggerFactory factory) {
+        this.factory = factory;
+    }
 }
