@@ -3,6 +3,7 @@ package pl.sda.project.coach.beans;
 public class FootballCoach implements Coach {
     private FortuneService fortuneService;
     private String name;
+    private String email;
 
     public FootballCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
@@ -24,5 +25,14 @@ public class FootballCoach implements Coach {
 
     public String getName() {
         return name;
+    }
+
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

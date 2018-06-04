@@ -3,7 +3,6 @@ package pl.sda.project.coach.init;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import pl.sda.project.coach.beans.Coach;
 import pl.sda.project.coach.beans.FootballCoach;
-import pl.sda.project.coach.beans.UnlackyFortuneService;
 
 public class AppLauncher {
     public static void main(String[] args) {
@@ -14,6 +13,7 @@ public class AppLauncher {
 
         System.out.println(greedyCoach.getDailyWorkout() + " " + greedyCoach.getDailyFortune());
         System.out.println("The coach " + greedyCoach.getName() + " says : " + theCoach.getDailyWorkout() + " " + theCoach.getDailyFortune());
+        System.out.println("trener email is " + greedyCoach.getEmail());
 
         context.close();
 
