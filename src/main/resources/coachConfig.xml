@@ -5,10 +5,11 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="myCoach" class="pl.sda.project.coach.beans.TrackCoach"/>
-    <bean id="greedyCoach" class="pl.sda.project.coach.beans.FootballCoach"/>
-
-    <!--<bean id="loggerPrinter" class="pl.sda.project.data.beans.LoggerPrinter">-->
-        <!--<constructor-arg name="factory" ref="loggerFactory"/>-->
-    <!--</bean>-->
+    <bean id="fortune" class="pl.sda.project.coach.beans.HappyFortuneService"/>
+    <bean id="greedyCoach" class="pl.sda.project.coach.beans.FootballCoach">
+        <constructor-arg ref="fortune"/>
+    </bean>
 
 </beans>
+
+

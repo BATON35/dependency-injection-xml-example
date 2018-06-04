@@ -7,12 +7,14 @@ public class AppLauncher {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("coachConfig.xml");
 
-        Coach theCoach = context.getBean("myCoach", Coach.class);
+       // Coach theCoach = context.getBean("myCoach", Coach.class);
         Coach greedyCoach = context.getBean("greedyCoach", Coach.class);
 
-        System.out.println(theCoach.getDailyWorkout() + " " + greedyCoach.getDailyWorkout());
+        System.out.println(greedyCoach.getDailyWorkout() + " " + greedyCoach.getDailyFortune());
 
         context.close();
 
     }
 }
+
+
