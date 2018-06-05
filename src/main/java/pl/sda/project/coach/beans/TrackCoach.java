@@ -19,6 +19,12 @@ public class TrackCoach implements Coach {
     public String getDailyFortune() {
         return fortune.getForutne();
     }
+    public void hello(){
+        System.out.println("Hello ");
+    }
+    public void bay(){
+        System.out.println("Bay bay");
+    }
 
 
 }

@@ -12,7 +12,11 @@
           class="pl.sda.project.coach.beans.RandomFortuneService"
           scope="prototype"/>
 
-    <bean id="myCoach" class="pl.sda.project.coach.beans.TrackCoach">
+    <bean id="myCoach"
+          class="pl.sda.project.coach.beans.TrackCoach"
+          scope="prototype"
+          init-method="hello"
+          destroy-method="bay">
         <property name="fortune" ref="fortuneForMyCoach"/>
     </bean>
 
