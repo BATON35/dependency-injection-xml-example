@@ -2,10 +2,10 @@ package pl.sda.project.coach.beans;
 
 public class FootballCoach implements Coach {
     private FortuneService fortuneService;
-    private String name;
+    private String  name;
     private String email;
 
-    public FootballCoach(FortuneService fortuneService) {
+    FootballCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
@@ -19,11 +19,11 @@ public class FootballCoach implements Coach {
         return fortuneService.getForutne();
     }
 
-    public void setName(String name) {
+    public void setName(String  name) {
         this.name = name;
     }
 
-    public String getName() {
+    public String  getName() {
         return name;
     }
 

@@ -1,4 +1,4 @@
-package pl.sda.project.demoAnnotation;
+package pl.sda.project.demoAnnotation.beans;
 
 public interface Coach {
     String getDailyWorkout();

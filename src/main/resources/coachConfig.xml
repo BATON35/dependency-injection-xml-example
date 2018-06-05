@@ -22,7 +22,7 @@
 
     <bean id="greedyCoach" class="pl.sda.project.coach.beans.FootballCoach">
         <constructor-arg ref="fortuneForMyCoach"/>
-        <property name="name" value="Zbyszek"/>
+        <property name="name" value="${foo.name}"/>
         <property name="email" value="${foo.email}"/>
     </bean>
 

@@ -1,11 +1,13 @@
-package pl.sda.project.demoAnnotation;
+package pl.sda.project.demoAnnotation.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class BaseballCoach implements Coach {
     private FortuneService fortuneService;
 
+    @Autowired
     BaseballCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
@@ -17,6 +19,6 @@ public class BaseballCoach implements Coach {
 
     @Override
     public String getFortune() {
-        return null;
+        return fortuneService.getForutne();
     }
 }

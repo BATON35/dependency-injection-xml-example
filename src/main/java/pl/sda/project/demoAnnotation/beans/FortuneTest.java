@@ -1,6 +1,5 @@
-package pl.sda.project.demoAnnotation;
+package pl.sda.project.demoAnnotation.beans;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
