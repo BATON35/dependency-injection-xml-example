@@ -8,14 +8,16 @@
     <context:property-placeholder location="classpath:sport.properties"/>
 
 
-    <bean id="antyFortune" class="pl.sda.project.coach.beans.UnlackyFortuneService"/>
+    <bean id="fortuneForMyCoach"
+          class="pl.sda.project.coach.beans.RandomFortuneService"
+          scope="prototype"/>
+
     <bean id="myCoach" class="pl.sda.project.coach.beans.TrackCoach">
-        <property name="fortune" ref="antyFortune"/>
+        <property name="fortune" ref="fortuneForMyCoach"/>
     </bean>
 
-    <bean id="fortune" class="pl.sda.project.coach.beans.HappyFortuneService"/>
     <bean id="greedyCoach" class="pl.sda.project.coach.beans.FootballCoach">
-        <constructor-arg ref="fortune"/>
+        <constructor-arg ref="fortuneForMyCoach"/>
         <property name="name" value="Zbyszek"/>
         <property name="email" value="${foo.email}"/>
     </bean>
