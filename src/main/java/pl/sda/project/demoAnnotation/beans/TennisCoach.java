@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component("OptionalNameForTennisCoach")
 public class TennisCoach implements Coach {
     @Autowired
-    //@Qualifier("randomService") proper place for qualifier
+    //@Qualifier("randomService") proper place  for qualifier
     private @Qualifier("randomService")
     FortuneService fortuneService;
 
