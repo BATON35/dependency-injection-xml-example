@@ -1,6 +1,7 @@
 package pl.sda.project.demoAnnotation.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -8,7 +9,9 @@ public class BaseballCoach implements Coach {
     private FortuneService fortuneService;
 
     @Autowired
-    BaseballCoach(FortuneService fortuneService) {
+   // @Qualifier("randomService") error!!!!!!!!!!!!!!!!!
+    BaseballCoach(@Qualifier("randomService") FortuneService fortuneService) {
+
         this.fortuneService = fortuneService;
     }
 
