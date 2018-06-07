@@ -1,4 +1,4 @@
-package pl.sda.project.demoAnnotation.beans;
+package pl.sda.project.sportConfiguration.beans;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
@@ -18,8 +18,8 @@ public class RandomService implements FortuneService {
     @Value("${foo.3Prediction}")
     private String prediction3;
 
-    RandomService() {
-        System.out.println("RandomService constructor form demoAnnotation package");
+    RandomService() {//What a fuck. Why the Intellij doesn't mark this constructor like utilized.
+        System.out.println("It's a live !!!!!!!!");
     }
     @PostConstruct
     private void doSomething(){
